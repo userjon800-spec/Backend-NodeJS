@@ -1,12 +1,16 @@
-let getArgs = require("./helpers/args");
+import getArgs from "./helpers/args.js";
+import { printError, printHelp, printSucces } from "./services/services.js";
 let startCli = () => {
   let args = getArgs(process.argv);
   console.log(args);
+  printError("Xato");
+  printSucces("To'g'ri");
   if (args.h) {
-  } 
-   if (args.s) {
-  } 
-   if (args.t) {
+    printHelp()
+  }
+  if (args.s) {
+  }
+  if (args.t) {
   }
   // result
 };
