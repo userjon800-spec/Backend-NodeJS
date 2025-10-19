@@ -28,5 +28,4 @@ let isExist = async (path) => {
     return false;
   }
 };
-
-export { saveKeyVal, getKeyVal,TOKEN_DICTIONARY };
+export { saveKeyVal, getKeyVal, TOKEN_DICTIONARY };

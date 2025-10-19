@@ -1,6 +1,6 @@
 let getArgs = (args) => {
   let res = {};
-  let [executer, file, ...rest] = args;
+  let [_, __, ...rest] = args;
   rest.forEach((val, i, arr) => {
     if (val.charAt(0) == "-") {
       if (i == arr.length - 1) {
@@ -12,7 +12,6 @@ let getArgs = (args) => {
       }
     }
   });
-  return res
+  return res;
 };
-
 export default getArgs;
